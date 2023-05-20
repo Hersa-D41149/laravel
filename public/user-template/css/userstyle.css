@@ -1,0 +1,45 @@
+/*---------------------------------------
+  NAVBAR
+-----------------------------------------*/
+
+.navbar {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: #80808059;
+}
+
+/* .tombol .btn-reg {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+} */
+
+.search-box {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    padding: 4px 8px;
+    border-radius: 30px;
+}
+
+.search-box .search-icon a {
+    font-size: 1.18rem;
+    color: white;
+}
+
+.search-box .search-input {
+    transition: 0.5s;
+}
+
+.search-input .input {
+    border: none;
+    outline: none;
+    background-color: unset;
+    padding: 2px;
+    font-weight: bold;
+}
+
+#userindex {
+    background-color: rgba(137, 43, 226, 0.401);
+}
