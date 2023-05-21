@@ -36,7 +36,7 @@
                         <td><input type="text" name="addMoreInputFields[0][jawaban]" placeholder="jawaban"
                                 class="form-control">
                         </td>
-                        <td><input type="text" name="addMoreInputFields[0][skor]" placeholder="Skor"
+                        <td><input type="number" name="addMoreInputFields[0][skor]" placeholder="Skor"
                                 class="form-control">
                         </td>
                         <td>
@@ -46,6 +46,7 @@
                     </tr>
                 </table>
                 <button type="submit" class="btn btn-primary col-md-2">Add</button>
+                <a class="btn btn-danger col-md-2" href="{{ route('crud') }}" role="button">Chancle</a>
             </form>
         </div>
     </div>
@@ -62,7 +63,7 @@
                 '<tr><td><input type="text" name="addMoreInputFields[' + i +
                 '][soal]" placeholder="Soal"class="form-control"></td><td><input type="text" name="addMoreInputFields[' +
                 i +
-                '][jawaban]" placeholder="jawaban"class="form-control"></td><td><input type="text" name="addMoreInputFields[' +
+                '][jawaban]" placeholder="jawaban"class="form-control"></td><td><input type="number" name="addMoreInputFields[' +
                 i +
                 '][skor]" placeholder="Skor"class="form-control"></td><td><button type="button" name="add" id="add" class="btn btn-danger remove-input-filed">remove</button></td></tr>'
             );

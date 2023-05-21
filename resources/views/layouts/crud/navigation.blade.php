@@ -1,7 +1,7 @@
 <nav>
     <ul>
         <li class="logo"><img src="{{ asset('img/1.jpg') }}"></li>
-        <li><a href="{{ route('home') }}"><i class="fa fa-home"></i>&nbsp; Home</a></li>
+        <li><a href="{{ route('hhome') }}"><i class="fa fa-home"></i>&nbsp; Home</a></li>
         <li><a href="{{ route('create') }}"><i class="fa fa-book"></i>&nbsp; Create</a></li>
         <li><a href="#"><i class="fa fa-users"></i>&nbsp; Users</a></li>
         <li><a href="#"><i class="fa fa-picture-o"></i>&nbsp; Pictures</a></li>

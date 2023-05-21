@@ -12,6 +12,7 @@ class TanyaController extends Controller
     // Host page
     public function join()
     {
+        $tanyas = Tanya::paginate(15);
         return view('pages.host.home');
     }
 
@@ -66,7 +67,8 @@ class TanyaController extends Controller
         Tanya::create($value);
         }
            // return back()->with('success','The post has been added!');
-        return Redirect::route('crud');
+        // return redirect('crud')->withSuccess('Task Created Successfully!');
+        return Redirect::route('crud')->withSuccess('Soal Berhasil Ditambahkan!');
     }
 
     // end cereate

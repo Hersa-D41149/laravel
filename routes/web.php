@@ -32,6 +32,9 @@ Route::get('/join', function () {
 Route::get('/pop', function () {
     return view('popup');
 });
+Route::get('/coba', function () {
+    return view('coba');
+});
 // User
 Auth::routes();
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'join'])->name('home');
@@ -46,10 +49,10 @@ Route::post('/try',   [StudentController::class, 'storetry'])->name('storetry');
 // Host
 Route::middleware(['host'])->group(function(){
 // Route::get('/viewrs',                [TanyaController::class, 'view1'])->name('viewrs');
-Route::get('/home',                     [TanyaController::class, 'join'])->name('home');
+// Route::get('/home',                  [TanyaController::class, 'join'])->name('home');
 Route::get('/host/crud',                [TanyaController::class, 'crud'])->name('crud');
 Route::get('/host/crud',                [TanyaController::class, 'show'])->name('crud');
-Route::get('/host/home',                [TanyaController::class, 'show1'])->name('home');
+Route::get('/host/home',                [TanyaController::class, 'show1'])->name('hhome');
 Route::get('/host/create',              [TanyaController::class, 'create'])->name('create');
 Route::post('/host/create',             [TanyaController::class, 'store'])->name('store');
 Route::get('/host/edit{tanya}',         [TanyaController::class, 'edit'])->name('edit');
